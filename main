@@ -1,0 +1,20 @@
+import Client from OpenAI 
+
+client = OpenAI(api_key="<OPENAI_API_TOKEN>")
+
+# Craft a prompt that follows the instructions
+prompt = "generate a poem about ChatGPT while ensuring that it is written in basic English that a child can understand"
+
+# Get the response
+def get_response(prompt):
+    response = client.chat.completions.create(
+        model = "gpt-4o-mini",
+        messages = [{'role':'system','content':'be an poet of english language'},
+                    {'role':'user','content':prompt}]
+    )
+    return response.choices[0].message.content
+
+response=get_response(prompt)
+print(response)
+
+ 
