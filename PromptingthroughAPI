@@ -1,0 +1,13 @@
+#Introduction to prompt engineering
+ #Action Verb using accurate words like "write " , "explain", "describe"
+ #  Precise instruction ( about context, output length, format, style, audience lead)
+ # Output_length/style ( in two sentences, table , spreadsheet , bulletpoints 
+ # Delimited prompts ( e.g triple backtickes) 
+ # Using f-Strings 
+Shot Prompting 
+ # Zero shot
+ # one shot 
+ # few shot 
+ # mutiple shot 
+Multi step prompting
+
